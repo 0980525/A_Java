@@ -23,19 +23,40 @@ public class 과제 {
 		 *  */
 		
 		Scanner scan = new Scanner(System.in);
-		System.out.println("컴퓨터와 가위바위보 게임");
-		System.out.println("가위(0),바위(1),보(2) 중 하나를 입력해주세요");
+		System.out.println("가위바위보 게임");
 		
 		
-		int random=(int)(Math.random()*2);
-		System.out.println("컴퓨터 >");
-		String str[] = new String[2];
-		for(int i=random;;) {
 		
-		str[0] = "가위";
-		str[1] = "바위";
-		str[2] = "보";
-		System.out.println("컴퓨터 >"+str(random));
+		int random=(int)(Math.random()*3); //0 1 2
+		System.out.println("컴퓨터 결정 완료");
+		System.out.println("가위바위보 중 하나를 선택하세요 >");
+		String myChoice = scan.next(); //내 선ㅌㅐㄱ
+		
+		String rChoice = (random==0)? "가위" : (random==1)?"바위":"보";
+		System.out.println("com선택 : "+rChoice);
+		
+		//비교(문자끼리 비교==(X) equals를 사용하여 비교
+		
+		if(rChoice.equals(myChoice)) {
+			System.out.println("비겼습니다.");}
+		else {
+			if() {}
+			else if
+			else if
+		}
+		
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+		
 		}
 		
 		
@@ -60,6 +81,6 @@ public class 과제 {
 		
 		
 
-	}
+	
 
 }
