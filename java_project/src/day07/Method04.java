@@ -54,20 +54,20 @@ public class Method04 {
 	
 	}
 	
-	public static double time(double num1,double num2) {
-		double result = num1*num2;
-		return result;}
-
-	public static double n(int num1,int num2) { //div
-			System.out.println(num1/num2);
-			return (double) num1/num2;	}
-	public static double[] rem2(int num1,int num2) { //
-				
-				double arr[]=new double[2]; //배열의 자리를 생성
-				arr[0]=(double)num1 / num2; //0번지에 넣을 값 생성(몫)
-				arr[1]=(double)num1 % num2; //1번지에 넣을 값 생성(나머지)
-				return arr; //return은 배열(arr)을 return한다.
-			}
+//	public static double time(double num1,double num2) {
+//		double result = num1*num2;
+//		return result;}
+//
+//	public static double n(int num1,int num2) { //div
+//			System.out.println(num1/num2);
+//			return (double) num1/num2;	}
+//	public static double[] rem2(int num1,int num2) { //
+//				
+//				double arr[]=new double[2]; //배열의 자리를 생성
+//				arr[0]=(double)num1 / num2; //0번지에 넣을 값 생성(몫)
+//				arr[1]=(double)num1 % num2; //1번지에 넣을 값 생성(나머지)
+//				return arr; //return은 배열(arr)을 return한다.
+//			}
 	/*1번의 배열을 전달받아서 평균을 연산하는 메서드 (평균을 리턴)
 	 * 리턴타입 평균 리턴 -> double
 	 * 매개변수 배열 int arr[]
@@ -77,9 +77,9 @@ public class Method04 {
 	int sum=0;
 	
 	 for(int i=0;i<arr.length;i++) {
-		 
+		 sum=arr[i];
 	 }
-		return;
+		return (double) sum / arr.length;
 		
 	}
 		
@@ -90,7 +90,12 @@ public class Method04 {
 	 * 매개변수 정수배열, 평균
 	 * 메서드명 print
 	 * */
+	public static void print(int arr[],double avg) {
+		
+	}
+	
 }
+
 
 	
 	
