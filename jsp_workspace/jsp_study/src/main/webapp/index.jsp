@@ -22,8 +22,8 @@
 	${ses.id} 님이 login 하였습니다.<br>
 	계정 생성일 : ${ses.regdate} <br>
 	마지막 접속 : ${ses.lastlogin}
-	<a href="#"><button>회원정보수정</button></a>
-	<a href="#"><button>회원리스트</button></a>
+	<a href="/memb/detailMove"><button>회원정보수정</button></a>
+	<a href="/memb/list"><button>회원리스트</button></a>
 	<a href="/memb/logout"><button>로그아웃</button></a>
 	<a href="/brd/register"><button type="button">글쓰기 페이지로 이동</button></a>
 	</c:if>
@@ -39,7 +39,13 @@
 const msg_login = `<c:out value="${msg_login}"/>`;
 console.log(msg_login);
 	if(msg_login == '-1'){
-		alert('로그인 정보가 일치하지 않습니다.'); //안됨
+		alert('로그인 정보가 일치하지 않습니다.'); 
+	}
+	
+	const msg_modify =`<c:out value="${msg_modify}"/>`;
+	console.log(msg_modify);
+	if(msg_modify =='-1'){
+		alert('회원정보가 수정되었습니다.');
 	}
 	</script>
 </body>

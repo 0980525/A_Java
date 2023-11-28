@@ -40,6 +40,9 @@
 	</tr>
 </table>
 <button type="submit">수정</button>
+
 </form>
+<a href="/brd/remove?bno=${bvo.bno} "><button type="button">modify</button></a>
+<a href="/brd/list"><button type="button">list</button></a>
 </body>
 </html>

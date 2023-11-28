@@ -13,4 +13,17 @@
   <update id="last" parameterType="String">
   	update member set lastLogin = now() where id=#{id}
   </update>
+  <select id="list" resultType="mvo">
+  	select * from member  
+  </select>
+ <!-- <select id="detail" parameterType="mvo" resultType="mvo">
+ 	select * from member where id=#{id}
+ </select> -->
+ <update id="up" parameterType="mvo">
+ 	update member set pwd=#{pwd},email=#{email},age=#{age} 
+ 	where id=#{id}
+ </update>
+ <delete id="delete" parameterType="String" >
+ 	delete from member where id=#{id}
+ </delete>
   </mapper>
